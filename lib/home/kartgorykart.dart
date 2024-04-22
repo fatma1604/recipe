@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/home/data/data.dart';
-import 'package:recipes_app/home/new_page.dart';
-
+import 'package:recipes_app/home/detay/reimler_page.dart';
 
 class Kategorykart extends StatelessWidget {
-  const Kategorykart(
-      {Key? key, required this.categori, required this.onKategoryClik})
-      : super(key: key);
+  const Kategorykart({
+    Key? key,
+    required this.categori,
+  }) : super(key: key);
   final Categori categori;
-  final void Function() onKategoryClik;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -16,8 +16,8 @@ class Kategorykart extends StatelessWidget {
         Navigator.push(
             context,
             MaterialPageRoute(
-                builder: (context) => NewPage(
-                      categori: categori,
+                builder: (context) => ReimlerPage(
+                      categoryId: categori.id,
                     )));
       },
       child: Container(
@@ -32,10 +32,10 @@ class Kategorykart extends StatelessWidget {
         child: Center(
             child: Text(
           categori.name,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 20, // Yazı boyutu
             fontWeight: FontWeight.bold,
-            color: Colors.blue,
+            color: Color.fromARGB(255, 82, 88, 94),
           ),
         )),
       ),

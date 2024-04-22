@@ -14,6 +14,7 @@ const categorylist = [
     color: Color(0xFFFFD740),
   ),
   Categori(name: "Tatlı", id: 3, color: Colors.pink),
+  Categori(name: "Salata", id: 4, color: Colors.pink),
 ];
 const yemekListesi = [
   Yemek(
@@ -42,10 +43,17 @@ const yemekListesi = [
       id: 2,
       name: "Patates Kızartması",
       mazeme: ["Patates", "Ayçiçek Yağı", "Tuz", "Kekik"]),
-  Yemek(
-      id: 2,
-      name: "Mantarlı Mantar",
-      mazeme: ["Mantar", "Tereyağı", "Sarımsak", "Maydanoz", "Tuz"]),
+  Yemek(id: 2, name: "Fırında Tavuklu Sebzeli Patates Kızartması", mazeme: [
+    "tavuk göğsü",
+    "patates",
+    "biber",
+    "sogan",
+    "sarımsak",
+    "tuz",
+    "karabiber",
+    "pul biber",
+    "kekik"
+  ]),
   Yemek(
       id: 2,
       name: "Sigara Böreği",
@@ -104,4 +112,29 @@ const yemekListesi = [
       id: 4,
       name: "Mango Avokado Salatası",
       mazeme: ["Marul", "Mango", "Avokado", "Kırmızı Soğan", "Limon Suyu"]),
+];
+const List<Images> resimlerListesi = [
+  Images(
+    imagePath: "assets/images/kofte.jpg",
+    id: 1,
+  ),
+  Images(imagePath: "assets/images/tavuksote.jpg", id: 2),
+  Images(imagePath: "assets/images/1.jpg", id: 3),
+  Images(imagePath: "assets/images/2.jpg", id: 4),
+  Images(imagePath: "assets/images/3.jpg", id: 6),
+  Images(imagePath: "assets/images/patets.jpg", id: 7),
+  Images(imagePath: "assets/images/51.jpg", id: 8),
+  Images(imagePath: "assets/images/6.jpg", id: 9),
+  Images(imagePath: "assets/images/7.jpg", id: 10),
+  Images(imagePath: "assets/images/8.jpg", id: 11),
+  Images(imagePath: "assets/images/9.jpg", id: 12),
+  Images(imagePath: "assets/images/10.jpg", id: 13),
+  Images(imagePath: "assets/images/11.jpg", id: 14),
+  Images(imagePath: "assets/images/13jpg.jpg", id: 15),
+  Images(imagePath: "assets/images/14.jpg", id: 16),
+  Images(imagePath: "assets/images/mevsim.jpg", id: 17),
+  Images(imagePath: "assets/images/mevsim.jpg", id: 18),
+  Images(imagePath: "assets/images/caprese.jpg", id: 19),
+  Images(imagePath: "assets/images/cevizli.jpg", id: 20),
+  Images(imagePath: "assets/images/manga.jpg", id: 21),
 ];

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/widget/nebox.dart';
 
-
 class MyTextField extends StatelessWidget {
   final TextEditingController? controller;
   final Widget prefixIcon;
@@ -44,20 +43,20 @@ class MyTextField extends StatelessWidget {
           decoration: InputDecoration(
             enabledBorder: const OutlineInputBorder(
               borderSide: BorderSide(
-                color: Color.fromARGB(255, 243, 229, 229),
+                color: Color.fromARGB(10, 243, 229, 229),
               ),
             ),
             focusedBorder: const OutlineInputBorder(
-              borderSide: BorderSide(color: Color.fromARGB(255, 63, 63, 63)),
+              borderSide: BorderSide(color: Color.fromARGB(78, 63, 63, 63)),
             ),
             filled: true,
-            fillColor: Colors.transparent,
+            fillColor:const Color.fromARGB(50, 255, 255, 255),
             hintText: hintText,
             hintStyle: const TextStyle(
-              color: Color.fromARGB(255, 255, 255, 255),
+              color: Color.fromARGB(255, 24, 18, 18),
               shadows: [
                 BoxShadow(
-                  color: Color.fromARGB(255, 252, 248, 248), // Shadow rengi
+                  color: Color.fromARGB(24, 252, 248, 248), // Shadow rengi
                   blurRadius: 3,
                   offset: Offset(0, 0), // Gölgelendirme yönü ve mesafesi
                 ),

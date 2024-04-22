@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:recipes_app/widget/myTextFromfild.dart';
 import 'package:recipes_app/widget/my_button.dart';
 
-
 class Forgetfrom extends StatefulWidget {
   const Forgetfrom({Key? key}) : super(key: key);
 
@@ -96,6 +95,7 @@ class _ForgetfromState extends State<Forgetfrom> {
   @override
   Widget build(BuildContext context) {
     return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         MyTextField(
           hintText: "E-mail",
@@ -103,9 +103,9 @@ class _ForgetfromState extends State<Forgetfrom> {
           controller: _emailController,
           prefixIcon: const Icon(Icons.email),
         ),
-        const SizedBox(height: 20),
+        const SizedBox(height: 10),
         MyButton(
-          buttonText: "Sifremi Resetle",
+          buttonText: "Sifremi Yenile",
           onTap: _handleResetButtonPressed,
         ),
       ],

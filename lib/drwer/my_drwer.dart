@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
-MyDrawer({Key? key}) : super(key: key);
+  MyDrawer({Key? key}) : super(key: key);
   final GlobalKey _adSoyadKey = GlobalKey();
 
   @override
@@ -28,38 +28,15 @@ MyDrawer({Key? key}) : super(key: key);
               onTap: () => Navigator.of(context).pushNamed("/curved"),
             ),
             MyListTile(
-              title: "Notice",
+              title: "Catolog",
               onTap: () => Navigator.of(context).pushNamed("/announcement"),
             ),
             MyListTile(
-              title: "Catalog",
+              title: "Favoviri",
               onTap: () => Navigator.of(context).pushNamed("/catalog"),
             ),
-            MyListTile(
-              title: "Exam",
-              onTap: () => Navigator.of(context).pushNamed("/exam"),
-            ),
-            MyListTile(
-              title: "Calendar",
-              onTap: () => Navigator.of(context).pushNamed("/calendar"),
-            ),
-            MyListTile(
-              title: "Admin",
-              onTap: () => Navigator.of(context).pushNamed("/admin"),
-            ),
             const Spacer(flex: 2),
-            DefaultTextStyle(
-              style: const TextStyle(
-                fontSize: 12,
-                color: Colors.white54,
-              ),
-              child: Container(
-                margin: const EdgeInsets.symmetric(
-                  vertical: 16.0,
-                ),
-                child: const Text("Copy Right"),
-              ),
-            ),
+           
           ],
         ),
       ),

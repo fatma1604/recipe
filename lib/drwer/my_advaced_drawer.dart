@@ -27,13 +27,8 @@ class _MyAdvancedDrawerState extends State<MyAdvancedDrawer> {
     return AdvancedDrawer(
         backdrop: Container(
           decoration: BoxDecoration(
-              color: containerColor,
-              image: const DecorationImage(
-                colorFilter: ColorFilter.mode(
-                    Color.fromARGB(255, 131, 95, 213), BlendMode.dstIn),
-                opacity: .4,
-                image: AssetImage("assets/images/tobeto-logo.png"),
-              )),
+            color: containerColor,
+          ),
         ),
         animationCurve: Easing.standard,
         animationDuration: const Duration(milliseconds: 300),

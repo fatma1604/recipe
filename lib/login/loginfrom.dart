@@ -1,4 +1,3 @@
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -7,7 +6,6 @@ import 'package:recipes_app/home/home.dart';
 import 'package:recipes_app/register/registerpage.dart';
 import 'package:recipes_app/widget/myTextFromfild.dart';
 import 'package:recipes_app/widget/my_button.dart';
-
 
 Future<void> signInWithGoogle(BuildContext context) async {
   try {
@@ -168,14 +166,14 @@ class _LoginFromState extends State<LoginFrom> {
               obscureText:
                   false, // 'obscurText' yerine 'obscureText' kullanıldı
               controller: _usernameController,
-              prefixIcon: Icon(Icons.email), // Ön ek ikon eklendi
+              prefixIcon:const Icon(Icons.email), // Ön ek ikon eklendi
             ),
             const SizedBox(height: 16),
             MyTextField(
               hintText: "Password",
               obscureText: true,
               controller: _passwordController,
-              prefixIcon: Icon(Icons.lock), // Ön ek ikon eklendi
+              prefixIcon:const Icon(Icons.lock), // Ön ek ikon eklendi
             ),
           ],
         ),
@@ -190,7 +188,7 @@ class _LoginFromState extends State<LoginFrom> {
               child: Text(
                 "Sifremi unutum",
                 style: TextStyle(
-                  color: Color.fromARGB(255, 233, 218, 218),
+                  color:const Color.fromARGB(255, 0, 0, 0),
                   fontWeight: FontWeight.w900,
                   fontSize: 20,
                   shadows: [
@@ -211,10 +209,10 @@ class _LoginFromState extends State<LoginFrom> {
             _handleLogin();
           },
         ),
-        Row(
+      const  Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(width: 16),
+           SizedBox(width: 16),
           ],
         ),
         TextButton(
@@ -225,7 +223,7 @@ class _LoginFromState extends State<LoginFrom> {
           child: Text(
             "KAYDOL",
             style: TextStyle(
-              color: Color.fromARGB(255, 240, 95, 95),
+              color:const Color.fromARGB(255, 12, 12, 12),
               fontWeight: FontWeight.w900,
               fontSize: 20,
               shadows: [

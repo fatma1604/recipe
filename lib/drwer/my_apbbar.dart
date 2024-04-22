@@ -8,11 +8,11 @@ class DrawerTopBar extends StatefulWidget {
   const DrawerTopBar({
     Key? key,
     required this.drawerController,
-    required this.image,
+   
     this.title,
   }) : super(key: key);
   final AdvancedDrawerController drawerController;
-  final String image;
+  
   final String? title;
 
   @override
@@ -22,7 +22,7 @@ class DrawerTopBar extends StatefulWidget {
 class _DrawerTopBarState extends State<DrawerTopBar> {
   @override
   Widget build(BuildContext context) {
-    final ThemeData theme = Theme.of(context);
+   
 
     return Padding(
       padding: const EdgeInsets.only(right: 30, left: 30, top: 45),
@@ -33,19 +33,8 @@ class _DrawerTopBarState extends State<DrawerTopBar> {
               onPressed: () {
                 widget.drawerController.showDrawer();
               },
-              icon: const NeuBox(child: Icon(Icons.menu))),
-          
-          NeuBox(
-            child: Image(
-              image: AssetImage(
-                widget.image,
-              ),
-              color: theme.brightness == Brightness.light
-                  ? Colors.black
-                  : Colors.white,
-              height: 25,
-            ),
-          )
+              icon:  NeuBox(child: Icon(Icons.menu))),
+   
         ],
       ),
     );

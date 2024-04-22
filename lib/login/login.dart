@@ -27,7 +27,7 @@ class Login extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(10),
+                    padding:const EdgeInsets.all(10),
                     child: LoginFrom(
                       onTap: () {},
                     ),

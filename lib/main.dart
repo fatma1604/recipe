@@ -1,8 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:recipes_app/firebase_options.dart';
-import 'package:recipes_app/onbord/onbord_screnn.dart';
 
+import 'package:recipes_app/onbord/onbord_screnn.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,11 +15,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
 
-      home:
-          Onbordscreen(), // Change to AuthGate to control authentication flow
+      home: Onbordscreen(), // Change to AuthGate to control authentication flow
     );
   }
 }

@@ -24,7 +24,7 @@ class Onbordscreen extends StatelessWidget {
         itemBuilder: (index) {
           final page = pages[index % pages.length];
           // Check if it's the last page and navigate to the login screen
-          if (index == pages.length - 1) {
+          if (index == pages.length - 0) {
             WidgetsBinding.instance!.addPostFrameCallback((_) {
               Navigator.of(context).pushReplacement(
                 MaterialPageRoute(

@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipes_app/foreget/forgetfrom.dart';
 
-
-
 class Forget extends StatelessWidget {
   const Forget({Key? key}) : super(key: key);
 
@@ -20,18 +18,11 @@ class Forget extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
-            child: Transform.translate(
-              offset: const Offset(0, 90), // Adjust the value as needed
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Padding(
-                    padding: EdgeInsets.all(10),
-                    child: Forgetfrom(),
-                  )
-                ],
-              ),
+          Center(
+            child: SizedBox(
+              width: MediaQuery.of(context).size.width *
+                  0.8, // Adjust the width as needed
+              child: Forgetfrom(),
             ),
           ),
         ],

@@ -5,7 +5,6 @@ import 'package:recipes_app/login/login.dart';
 import 'package:recipes_app/widget/myTextFromfild.dart';
 import 'package:recipes_app/widget/my_button.dart';
 
-
 class Registerfrom extends StatelessWidget {
   void Function()? onTap;
 
@@ -25,8 +24,8 @@ class Registerfrom extends StatelessWidget {
             password: _passwordController.text,
           );
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text('Kayıt başarılı!'),
+         const   SnackBar(
+              content:const Text('Kayıt başarılı!'),
             ),
           );
           // Kayıt başarılı olduğunda, giriş sayfasına yönlendirme yapabilirsiniz
@@ -89,14 +88,14 @@ class Registerfrom extends StatelessWidget {
               obscureText:
                   false, // 'obscurText' yerine 'obscureText' kullanıldı
               controller: _emailController,
-              prefixIcon: Icon(Icons.email), // Ön ek ikon eklendi
+              prefixIcon:const Icon(Icons.email), // Ön ek ikon eklendi
             ),
             const SizedBox(height: 16),
             MyTextField(
               hintText: "Password",
               obscureText: true,
               controller: _passwordController,
-              prefixIcon: Icon(Icons.lock), // Ön ek ikon eklendi
+              prefixIcon:const Icon(Icons.lock), // Ön ek ikon eklendi
             ),
             const SizedBox(height: 16),
             MyTextField(
@@ -107,14 +106,17 @@ class Registerfrom extends StatelessWidget {
             ),
           ],
         ),
+      const  SizedBox(
+          height: 20,
+        ),
         MyButton(
           buttonText: "Kayıtol",
           onTap: () => register(context),
         ),
-        Row(
+     const   Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(width: 16),
+            SizedBox(width: 16),
           ],
         ),
         TextButton(
@@ -123,9 +125,9 @@ class Registerfrom extends StatelessWidget {
                 context, MaterialPageRoute(builder: (context) => Login()));
           },
           child: Text(
-            " 'Giriş sayfasına git',",
+            " Giriş sayfasına git",
             style: TextStyle(
-              color: Color.fromARGB(255, 240, 95, 95),
+              color:const Color.fromARGB(255, 0, 0, 0),
               fontWeight: FontWeight.w900,
               fontSize: 20,
               shadows: [

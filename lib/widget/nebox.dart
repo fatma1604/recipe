@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
 class NeuBox extends StatelessWidget {
-  const NeuBox(
+ const NeuBox(
       {Key? key,
       this.child,
       this.width,
       this.height,
-      this.backgroundColor = Colors.blueGrey})
+      this.backgroundColor = const Color.fromARGB(17, 248, 245, 245)})
       : super(key: key);
   final Widget? child;
   final double? width;
@@ -15,8 +15,8 @@ class NeuBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double blurRadius = 10;
-    final Offset offset = Offset(4, 4);
+    final double blurRadius = 5;
+     final Offset offset = Offset(0, 1);
 
     return Container(
       constraints: BoxConstraints(
@@ -28,12 +28,12 @@ class NeuBox extends StatelessWidget {
         borderRadius: BorderRadius.circular(12),
         boxShadow: [
           BoxShadow(
-            color: Color.fromARGB(255, 120, 158, 177),
+            color:const Color.fromARGB(255, 139, 138, 138),
             offset: -offset, // Adjust shadow position for neumorphism
             blurRadius: blurRadius,
           ),
           BoxShadow(
-            color: const Color.fromARGB(255, 0, 0, 0),
+            color: Colors.white,
             offset: offset, // Adjust shadow position for neumorphism
             blurRadius: blurRadius,
           ),
